@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-wrapper">
+            <!-- Header -->
+            <div class="header">
+                <h1>🤖 AI Assistant</h1>
+                <button id="newChatBtn" class="btn-new-chat">Yangi Chat</button>
+            </div>
+
+            <!-- Chat Messages Container -->
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome-message">
+                    <h2>Assalomu alaykum!</h2>
+                    <p>Men AI assistantman. Sizga yordam berishga tayyorman.</p>
+                    <div class="suggestions">
+                        <button class="suggestion-btn">Salom</button>
+                        <button class="suggestion-btn">Vaqt nima?</button>
+                        <button class="suggestion-btn">Sana nima?</button>
+                        <button class="suggestion-btn">Ko'mak kerakmi?</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <form id="chatForm" class="chat-form">
+                    <input 
+                        type="text" 
+                        id="messageInput" 
+                        class="message-input" 
+                        placeholder="Savolingizni yozing..."
+                        autocomplete="off"
+                    >
+                    <button type="submit" class="btn-send">Yuborish</button>
+                </form>
+            </div>
+
+            <!-- Clear Chat -->
+            <div class="footer">
+                <button id="clearChatBtn" class="btn-clear">Chatni Tozalash</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
