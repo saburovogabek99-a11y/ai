@@ -1,0 +1,20 @@
+{
+  "name": "ai-chat-assistant",
+  "version": "1.0.0",
+  "description": "Uzbek AI Chat Assistant - Flask + HTML + CSS + JavaScript",
+  "main": "app.py",
+  "scripts": {
+    "start": "python app.py",
+    "dev": "flask run",
+    "production": "gunicorn app:app"
+  },
+  "keywords": [
+    "ai",
+    "chatbot",
+    "uzbek",
+    "flask",
+    "chat-assistant"
+  ],
+  "author": "saburovogabek99-a11y",
+  "license": "MIT"
+}
